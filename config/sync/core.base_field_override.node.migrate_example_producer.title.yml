@@ -1,0 +1,18 @@
+uuid: 73865e1d-22b6-49ff-bb88-59cd0c69e7fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_producer
+id: node.migrate_example_producer.title
+field_name: title
+entity_type: node
+bundle: migrate_example_producer
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

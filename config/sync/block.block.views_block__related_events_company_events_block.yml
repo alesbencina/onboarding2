@@ -1,0 +1,33 @@
+uuid: acaf34c0-26d4-43ee-9d4d-4d6f8bbc9c15
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_events
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__related_events_company_events_block
+theme: bartik
+region: sidebar_second
+weight: -16
+provider: null
+plugin: 'views_block:related_events-company_events_block'
+settings:
+  id: 'views_block:related_events-company_events_block'
+  label: Event
+  provider: views
+  label_display: visible
+  views_label: Event
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      company: company
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

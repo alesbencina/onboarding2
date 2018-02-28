@@ -1,0 +1,29 @@
+uuid: 601d71be-4d67-47e9-98a6-109d0b827a5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.solr_search_events
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: exposedformsolr_search_eventspage_1
+theme: bartik
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'views_exposed_filter_block:solr_search_events-page_1'
+settings:
+  id: 'views_exposed_filter_block:solr_search_events-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /solr-search-events
+    negate: false
+    context_mapping: {  }

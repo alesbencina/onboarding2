@@ -1,0 +1,82 @@
+uuid: 86c0b8d5-b46f-43ff-a508-8235ca716f52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c_description
+    - search_api.server.solr_2
+  module:
+    - search_api
+    - node
+id: solr_companies
+name: 'solr companies'
+description: ''
+read_only: false
+field_settings:
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+  field_c_description:
+    label: Description
+    datasource_id: 'entity:node'
+    property_path: field_c_description
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_c_description
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - company
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  highlight:
+    highlight: always
+    highlight_partial: false
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  html_filter:
+    all_fields: false
+    fields:
+      - field_c_description
+    title: true
+    alt: true
+    tags:
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      b: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  ignorecase:
+    all_fields: true
+    fields:
+      - title
+      - field_c_description
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: solr_2

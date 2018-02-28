@@ -1,0 +1,18 @@
+uuid: fe81c51f-c11f-48ed-a737-fb1d305174dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.migrate_example_advanced_comment
+id: comment.migrate_example_advanced_comment.subject
+field_name: subject
+entity_type: comment
+bundle: migrate_example_advanced_comment
+label: Subject
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 73365fd2-4a5c-40c9-96f9-bdc4b5aff2dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_wine
+id: node.migrate_example_wine.title
+field_name: title
+entity_type: node
+bundle: migrate_example_wine
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

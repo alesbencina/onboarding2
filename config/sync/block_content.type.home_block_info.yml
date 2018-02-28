@@ -1,0 +1,8 @@
+uuid: 3e1d61c2-4516-416c-b808-4d7b1433194a
+langcode: en
+status: true
+dependencies: {  }
+id: home_block_info
+label: 'block info'
+revision: 0
+description: 'boost your event, keep tracking, reach out'

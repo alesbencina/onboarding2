@@ -1,0 +1,22 @@
+uuid: 5f9efe87-a5be-4f26-be1f-b97374a93cea
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_producer
+id: node.migrate_example_producer.sticky
+field_name: sticky
+entity_type: node
+bundle: migrate_example_producer
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: b939a1b4-ab49-4d95-bc86-fe0ed3c0ce7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_producer
+id: node.migrate_example_producer.created
+field_name: created
+entity_type: node
+bundle: migrate_example_producer
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

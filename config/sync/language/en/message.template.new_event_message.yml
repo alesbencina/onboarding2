@@ -1,0 +1,4 @@
+text:
+  -
+    value: "<p>New event [message:field_event_reference:entity:title]&nbsp; has been created!</p>\r\n"
+    format: basic_html

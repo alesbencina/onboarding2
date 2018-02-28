@@ -1,0 +1,20 @@
+uuid: 071ce599-f42c-45e2-b953-217a1ee32a84
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_beer
+id: node.migrate_example_beer.uid
+field_name: uid
+entity_type: node
+bundle: migrate_example_beer
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

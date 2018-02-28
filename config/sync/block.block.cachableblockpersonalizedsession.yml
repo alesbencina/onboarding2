@@ -1,0 +1,20 @@
+uuid: c398ee6b-23f5-4c56-8d59-4469c10d9964
+langcode: en
+status: true
+dependencies:
+  module:
+    - ad_general
+  theme:
+    - bartik
+id: cachableblockpersonalizedsession
+theme: bartik
+region: sidebar_first
+weight: -17
+provider: null
+plugin: cachable_block_session
+settings:
+  id: cachable_block_session
+  label: 'Cachable block personalized session'
+  provider: ad_general
+  label_display: visible
+visibility: {  }

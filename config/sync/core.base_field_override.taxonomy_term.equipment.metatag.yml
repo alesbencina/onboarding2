@@ -1,0 +1,18 @@
+uuid: 94fd1f5e-a5e1-44f4-834b-fa1976a101be
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.equipment
+id: taxonomy_term.equipment.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: equipment
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

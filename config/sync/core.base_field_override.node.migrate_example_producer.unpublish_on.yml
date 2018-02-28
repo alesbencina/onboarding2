@@ -1,0 +1,18 @@
+uuid: e296cc04-9dad-4981-a0bc-4b986719b4af
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_producer
+id: node.migrate_example_producer.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: migrate_example_producer
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -1,0 +1,20 @@
+uuid: 07986fc3-45ec-4277-98e4-7bf26cc2b607
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.equipment
+  module:
+    - path
+id: taxonomy_term.equipment.path
+field_name: path
+entity_type: taxonomy_term
+bundle: equipment
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,19 @@
+uuid: e31bacc3-d3a5-4350-b9d9-0c3497dcdfd8
+langcode: en
+status: true
+dependencies:
+  module:
+    - ad_general
+    - node
+id: node.field_youtubea
+field_name: field_youtubea
+entity_type: node
+type: field_youtube_link
+settings: {  }
+module: ad_general
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

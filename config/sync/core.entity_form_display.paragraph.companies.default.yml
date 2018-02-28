@@ -1,0 +1,15 @@
+uuid: c549856e-8acb-4af2-ac38-a05bf44ea752
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.companies
+id: paragraph.companies.default
+targetEntityType: paragraph
+bundle: companies
+mode: default
+content: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,16 @@
+uuid: 0b6ea7d6-6bd8-489e-8a86-767a929fffd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.last_tree_events
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: block_content.last_tree_events
+target_entity_type_id: block_content
+target_bundle: last_tree_events
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,20 @@
+uuid: 9009a1f1-b361-4286-9938-d72a577bd1d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.view
+id: paragraph.view.uid
+field_name: uid
+entity_type: paragraph
+bundle: view
+label: 'Authored by'
+description: 'The user ID of the paragraphs author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\paragraphs\Entity\Paragraph::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

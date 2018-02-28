@@ -1,0 +1,9 @@
+label: 'Top dogodki'
+display:
+  default:
+    display_options:
+      title: 'Top dogodki'
+  page_1:
+    display_options:
+      menu:
+        title: 'Top dogodki'

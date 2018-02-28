@@ -1,0 +1,12 @@
+uuid: 32b5f836-7160-4a34-a758-2b4a00542a1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.companies
+id: paragraph.companies.default
+targetEntityType: paragraph
+bundle: companies
+mode: default
+content: {  }
+hidden: {  }

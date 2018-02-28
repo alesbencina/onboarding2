@@ -1,0 +1,18 @@
+uuid: 9b12e760-d1c4-44df-bde8-709998cdea01
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_wine
+id: node.migrate_example_wine.publish_on
+field_name: publish_on
+entity_type: node
+bundle: migrate_example_wine
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

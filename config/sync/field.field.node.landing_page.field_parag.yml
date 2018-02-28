@@ -1,0 +1,43 @@
+uuid: 8c072727-b21c-4cac-b206-05871bcaf89e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parag
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.companies
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_parag
+field_name: field_parag
+entity_type: node
+bundle: landing_page
+label: paragraph
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles:
+      companies: companies
+    target_bundles_drag_drop:
+      view:
+        weight: 6
+        enabled: false
+      companies:
+        enabled: true
+        weight: 7
+      content:
+        weight: 8
+        enabled: false
+      image:
+        weight: 9
+        enabled: false
+      image_text:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

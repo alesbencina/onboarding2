@@ -1,0 +1,8 @@
+uuid: 8d982475-c7d4-4334-8a94-9a15da242b4b
+langcode: en
+status: true
+dependencies: {  }
+id: events_block
+label: 'Events block'
+revision: 0
+description: ''

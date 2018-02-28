@@ -1,0 +1,8 @@
+uuid: ea8e97b8-4d81-4fcb-bd80-02b0304a1f11
+langcode: en
+status: true
+dependencies: {  }
+id: node__slider
+label: 'Content: Slider'
+tags:
+  title: '[site:name]'

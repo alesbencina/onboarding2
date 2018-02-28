@@ -1,0 +1,108 @@
+uuid: 6600fa9c-d7bf-4581-88c3-a4bcf6cd7549
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - field.storage.node.field_event_type
+    - search_api.server.localtwo
+  module:
+    - search_api
+    - node
+id: events_search
+name: 'events search'
+description: ''
+read_only: false
+field_settings:
+  field_description:
+    label: Description
+    datasource_id: 'entity:node'
+    property_path: field_description
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_description
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+  field_event_type:
+    label: 'Event type'
+    datasource_id: 'entity:node'
+    property_path: field_event_type
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_event_type
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - event
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  html_filter:
+    all_fields: true
+    fields:
+      - field_description
+      - title
+      - field_event_type
+    title: true
+    alt: true
+    tags:
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      b: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  ignorecase:
+    all_fields: true
+    fields:
+      - field_description
+      - title
+      - field_event_type
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  rendered_item: {  }
+  stemmer:
+    all_fields: true
+    fields:
+      - field_description
+      - title
+      - field_event_type
+    exceptions:
+      texan: texa
+      mexican: mexic
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+  tokenizer:
+    all_fields: true
+    fields:
+      - field_description
+      - title
+      - field_event_type
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: localtwo

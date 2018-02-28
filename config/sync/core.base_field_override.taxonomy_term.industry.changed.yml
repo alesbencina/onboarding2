@@ -1,0 +1,18 @@
+uuid: 268e6d1e-ab9b-4c91-89b4-b6ffce07401f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.industry
+id: taxonomy_term.industry.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: industry
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

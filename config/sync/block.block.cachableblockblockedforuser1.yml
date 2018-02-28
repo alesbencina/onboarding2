@@ -1,0 +1,20 @@
+uuid: a6522bda-68b6-41d6-9bc4-58c1aff88252
+langcode: en
+status: true
+dependencies:
+  module:
+    - ad_general
+  theme:
+    - bartik
+id: cachableblockblockedforuser1
+theme: bartik
+region: sidebar_first
+weight: -18
+provider: null
+plugin: cachable_block_blocked_for_user_one
+settings:
+  id: cachable_block_blocked_for_user_one
+  label: 'Cachable block blocked for user 1'
+  provider: ad_general
+  label_display: visible
+visibility: {  }

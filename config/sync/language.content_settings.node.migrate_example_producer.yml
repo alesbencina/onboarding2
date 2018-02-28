@@ -1,0 +1,16 @@
+uuid: f12552b2-32c1-4ac3-91b0-1b960ccabff9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_producer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.migrate_example_producer
+target_entity_type_id: node
+target_bundle: migrate_example_producer
+default_langcode: site_default
+language_alterable: false

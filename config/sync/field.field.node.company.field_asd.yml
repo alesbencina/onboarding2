@@ -1,0 +1,21 @@
+uuid: 1658bc3a-5ca7-4739-a206-8ecb75441174
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_asd
+    - node.type.company
+  module:
+    - ad_general
+id: node.company.field_asd
+field_name: field_asd
+entity_type: node
+bundle: company
+label: asd
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_youtube_link

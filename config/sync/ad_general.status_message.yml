@@ -1,0 +1,7 @@
+page_status_top:
+  hidden: false
+  selected: info
+  statuses:
+    atext: a
+    alerttext: 'Hook Insertarticle'
+  text: 'Sent event to friend'

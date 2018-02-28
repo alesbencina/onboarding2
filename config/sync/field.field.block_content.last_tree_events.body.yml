@@ -1,0 +1,22 @@
+uuid: af5a49fe-4fe6-4cbc-97b6-618ba452e427
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.last_tree_events
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.last_tree_events.body
+field_name: body
+entity_type: block_content
+bundle: last_tree_events
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

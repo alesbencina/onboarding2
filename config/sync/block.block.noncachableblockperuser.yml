@@ -1,0 +1,20 @@
+uuid: a1f8130a-35b4-4ace-b226-edfdf5d1f680
+langcode: en
+status: true
+dependencies:
+  module:
+    - ad_general
+  theme:
+    - bartik
+id: noncachableblockperuser
+theme: bartik
+region: sidebar_first
+weight: -15
+provider: null
+plugin: cachable_per_user
+settings:
+  id: cachable_per_user
+  label: 'Non cachable block per user'
+  provider: ad_general
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,124 @@
+uuid: e300279a-e9ec-42d9-adec-e058a8cd82b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.smallteaser
+    - field.field.node.location.field_address
+    - field.field.node.location.field_contact
+    - field.field.node.location.field_description
+    - field.field.node.location.field_equipment
+    - field.field.node.location.field_event_website
+    - field.field.node.location.field_image
+    - field.field.node.location.field_phone
+    - field.field.node.location.field_rgb
+    - field.field.node.location.field_youtugbe_
+    - node.type.location
+  module:
+    - ad_general
+    - address
+    - ds
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked
+      library: ds/ds_2col_stacked
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      header:
+        - field_image
+        - field_description
+        - flag_subscribe_node
+      left:
+        - field_event_website
+        - field_phone
+        - field_contact
+      right:
+        - field_equipment
+      footer:
+        - field_yt
+        - field_address
+id: node.location.smallteaser
+targetEntityType: node
+bundle: location
+mode: smallteaser
+content:
+  field_address:
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: footer
+  field_contact:
+    type: basic_string
+    weight: 5
+    region: left
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_description:
+    type: text_default
+    weight: 1
+    region: header
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_equipment:
+    type: entity_reference_url_title
+    weight: 6
+    region: right
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_event_website:
+    type: string
+    weight: 3
+    region: left
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: header
+  field_phone:
+    type: string
+    weight: 4
+    region: left
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  flag_subscribe_node:
+    weight: 2
+    region: header
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_rgb: true
+  field_youtugbe_: true
+  langcode: true
+  links: true

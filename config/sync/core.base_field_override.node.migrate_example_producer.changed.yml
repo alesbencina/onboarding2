@@ -1,0 +1,18 @@
+uuid: cfacc8f4-1fe1-4882-bbfa-625e5ac0d20a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_producer
+id: node.migrate_example_producer.changed
+field_name: changed
+entity_type: node
+bundle: migrate_example_producer
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

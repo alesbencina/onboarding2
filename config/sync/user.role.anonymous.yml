@@ -1,0 +1,23 @@
+uuid: 44ad1cab-363b-42ac-a98c-2becd4621e47
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'administer rest resources'
+  - 'create article content'
+  - 'create event content'
+  - 'edit any event content'
+  - 'restful get ad_general_demo_resource'
+  - 'restful get ad_general_events_resource'
+  - 'restful post ad_general_events_resource'
+  - 'search content'
+  - 'use text format restricted_html'

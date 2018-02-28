@@ -1,0 +1,13 @@
+uuid: 01fc8eda-ffff-4f60-935b-f9dfab262857
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.favourites_events.unflag
+label: 'Unflag this item'
+type: node
+plugin: 'flag_action:favourites_events.unflag'
+configuration:
+  flag_id: favourites_events
+  flag_action: unflag

@@ -1,0 +1,28 @@
+uuid: 8aa26feb-b962-48bc-85cf-8c24e32790ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - ad_general
+    - ctools
+  theme:
+    - bartik
+id: sendtofriendform
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: send_to_friend
+settings:
+  id: send_to_friend
+  label: 'Send to friend form'
+  provider: ad_general
+  label_display: visible
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,18 @@
+uuid: f66ff786-158b-43c0-a508-b05e558c7928
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_beer
+id: node.migrate_example_beer.title
+field_name: title
+entity_type: node
+bundle: migrate_example_beer
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

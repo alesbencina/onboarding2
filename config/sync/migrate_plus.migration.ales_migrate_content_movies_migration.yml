@@ -1,0 +1,48 @@
+uuid: 93232cfe-e0aa-4098-a71c-c4ccc1747dc6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: cwh1EqEndpXXQs1p1Gv4Cocdm4qSleRjTho6TfoLQ7k
+id: ales_migrate_content_movies_migration
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: null
+label: Movies
+source:
+  plugin: csv
+  path: 'public://movies.csv'
+  header_row_count: 1
+  keys:
+    - id
+  constants:
+    slash: /
+process:
+  type:
+    plugin: default_value
+    default_value: movie
+  title: title
+  langcode:
+    plugin: default_value
+    default_value: en
+  field_plot: plot
+  field_actor:
+    -
+      plugin: explode
+      source: actors
+      delimiter: ','
+    -
+      plugin: migration
+      migration: ales_migrate_content_actors
+  field_created:
+    -
+      plugin: date_time_to_timestamp
+      source: created
+destination:
+  plugin: 'entity:node'
+  default_bundle: movie
+migration_dependencies:
+  required:
+    - ales_migrate_content_actors

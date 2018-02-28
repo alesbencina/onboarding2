@@ -1,0 +1,9 @@
+uuid: 2aae592d-2b62-488b-8542-5246b94747da
+langcode: en
+status: true
+dependencies: {  }
+id: content
+label: Content
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

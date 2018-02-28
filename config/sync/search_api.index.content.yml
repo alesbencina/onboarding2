@@ -1,0 +1,95 @@
+uuid: dc203834-51ae-406c-a5e9-fc558c7e6872
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c_description
+    - field.storage.node.field_industry
+    - search_api.server.local
+  module:
+    - search_api
+    - node
+id: content
+name: company
+description: ''
+read_only: false
+field_settings:
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+  field_c_description:
+    label: Description
+    datasource_id: 'entity:node'
+    property_path: field_c_description
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_c_description
+  field_industry:
+    label: Industry
+    datasource_id: 'entity:node'
+    property_path: field_industry
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_industry
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - company
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  html_filter:
+    all_fields: true
+    fields:
+      - title
+      - field_c_description
+      - field_industry
+    title: true
+    alt: true
+    tags:
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      b: 2
+    weights:
+      preprocess_index: -48
+      preprocess_query: -15
+  ignorecase:
+    all_fields: true
+    fields:
+      - title
+      - field_c_description
+      - field_industry
+    weights:
+      preprocess_index: -49
+      preprocess_query: -20
+  rendered_item: {  }
+  stemmer:
+    all_fields: true
+    fields:
+      - title
+      - field_c_description
+    exceptions:
+      texan: texa
+      mexican: mexic
+    weights:
+      preprocess_index: -44
+      preprocess_query: 0
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: local

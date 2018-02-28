@@ -1,0 +1,18 @@
+uuid: ff4617c1-c942-4d0f-9b70-7226bd77bd14
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.location
+id: node.location.publish_on
+field_name: publish_on
+entity_type: node
+bundle: location
+label: 'Publish on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

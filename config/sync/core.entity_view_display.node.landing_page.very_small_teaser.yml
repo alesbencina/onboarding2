@@ -1,0 +1,32 @@
+uuid: f4822f67-6ccd-40f1-a9f5-34baba75ca12
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.very_small_teaser
+    - field.field.node.landing_page.field_parag
+    - node.type.landing_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.landing_page.very_small_teaser
+targetEntityType: node
+bundle: landing_page
+mode: very_small_teaser
+content:
+  field_parag:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

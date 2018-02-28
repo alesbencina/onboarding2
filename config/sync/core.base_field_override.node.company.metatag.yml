@@ -1,0 +1,18 @@
+uuid: b200c229-347f-478f-ab3f-950ce04dc67e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.company
+id: node.company.metatag
+field_name: metatag
+entity_type: node
+bundle: company
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

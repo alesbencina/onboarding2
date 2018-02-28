@@ -1,0 +1,21 @@
+uuid: 9c81999a-1a20-4d4a-a520-5b512f32ee21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_start_end_date
+    - node.type.event
+  module:
+    - datetime_range
+id: node.event.field_start_end_date
+field_name: field_start_end_date
+entity_type: node
+bundle: event
+label: 'Start/End date'
+description: 'Start and end date of event.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

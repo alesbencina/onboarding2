@@ -1,0 +1,21 @@
+uuid: dbe928e5-2386-4733-9cc6-64c87a075acd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.countries
+  module:
+    - user
+id: node.countries.default
+targetEntityType: node
+bundle: countries
+mode: default
+content:
+  flag_subscribe_node:
+    weight: 10
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

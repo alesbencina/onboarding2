@@ -1,0 +1,18 @@
+uuid: 38cd199c-6aa8-4e0a-9c78-7747d4dc1660
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.migrate_example_advanced_comment
+id: comment.migrate_example_advanced_comment.homepage
+field_name: homepage
+entity_type: comment
+bundle: migrate_example_advanced_comment
+label: Homepage
+description: 'The comment author''s home page address.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: uri

@@ -1,0 +1,18 @@
+uuid: a01e2e13-373b-4838-adcc-053c21dd28d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_wine
+id: node.migrate_example_wine.changed
+field_name: changed
+entity_type: node
+bundle: migrate_example_wine
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

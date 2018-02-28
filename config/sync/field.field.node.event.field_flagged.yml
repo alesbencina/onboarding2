@@ -1,0 +1,28 @@
+uuid: 767e8839-334f-4eb0-889d-53d03e848905
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_flagged
+    - flag.flag.favourites_events
+    - node.type.event
+id: node.event.field_flagged
+field_name: field_flagged
+entity_type: node
+bundle: event
+label: flagged
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:flagging'
+  handler_settings:
+    target_bundles:
+      favourites_events: favourites_events
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

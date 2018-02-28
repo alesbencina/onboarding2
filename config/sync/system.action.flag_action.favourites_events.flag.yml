@@ -1,0 +1,13 @@
+uuid: 8ead14ab-27f7-433f-b50d-ca4e8a42f55e
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.favourites_events.flag
+label: 'Add to favourites'
+type: node
+plugin: 'flag_action:favourites_events.flag'
+configuration:
+  flag_id: favourites_events
+  flag_action: flag

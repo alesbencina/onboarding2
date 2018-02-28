@@ -1,0 +1,18 @@
+uuid: f66b35e5-db94-4f05-a1c2-3263e8649f0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_beer
+id: node.migrate_example_beer.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: migrate_example_beer
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

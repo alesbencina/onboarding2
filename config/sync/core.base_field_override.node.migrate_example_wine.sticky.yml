@@ -1,0 +1,22 @@
+uuid: dcd4347e-1c9a-464b-97f2-3b51fb4f4c57
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_wine
+id: node.migrate_example_wine.sticky
+field_name: sticky
+entity_type: node
+bundle: migrate_example_wine
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

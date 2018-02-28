@@ -1,0 +1,22 @@
+uuid: 94666f14-b7a0-475a-a51b-1fd3f7ed29b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_producer
+id: node.migrate_example_producer.status
+field_name: status
+entity_type: node
+bundle: migrate_example_producer
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

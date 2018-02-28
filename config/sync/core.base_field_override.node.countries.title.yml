@@ -1,0 +1,18 @@
+uuid: 1660acc4-8029-410a-af3a-a4285a92473b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.countries
+id: node.countries.title
+field_name: title
+entity_type: node
+bundle: countries
+label: countries
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

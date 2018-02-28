@@ -1,0 +1,27 @@
+uuid: 77e689fd-9cd6-4913-aa70-2d000027b71f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'administer rest resources'
+  - 'create article content'
+  - 'create event content'
+  - 'edit any event content'
+  - 'post comments'
+  - 'restful get ad_general_demo_resource'
+  - 'restful get ad_general_events_resource'
+  - 'restful post ad_general_events_resource'
+  - 'restful post custom_rest_resource'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'

@@ -1,0 +1,17 @@
+label: Lokacije
+display:
+  page_1:
+    display_options:
+      menu:
+        title: Lokacije
+  default:
+    display_options:
+      title: Lokacije
+      filters:
+        title:
+          expose:
+            label: 'Ime dogodka'
+        field_equipment_target_id:
+          expose:
+            label: Oprema
+description: lokacije

@@ -1,0 +1,16 @@
+uuid: 188d61db-56b1-409f-be17-861f40fbf5aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.migrate_example_wine_regions
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: taxonomy_term.migrate_example_wine_regions
+target_entity_type_id: taxonomy_term
+target_bundle: migrate_example_wine_regions
+default_langcode: site_default
+language_alterable: false

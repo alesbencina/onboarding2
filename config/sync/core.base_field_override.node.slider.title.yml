@@ -1,0 +1,18 @@
+uuid: 21553d8b-8232-4b35-a279-b205e5bf1f6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slider
+id: node.slider.title
+field_name: title
+entity_type: node
+bundle: slider
+label: 'slider home page'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

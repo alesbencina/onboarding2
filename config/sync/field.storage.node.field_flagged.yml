@@ -1,0 +1,20 @@
+uuid: 28c88c6b-95cc-49f7-8330-20cc67ab3442
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+    - node
+id: node.field_flagged
+field_name: field_flagged
+entity_type: node
+type: entity_reference
+settings:
+  target_type: flagging
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

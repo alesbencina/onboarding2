@@ -1,0 +1,21 @@
+uuid: 5805c6e3-3ea4-450e-b44e-9de7effe3d85
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.actors
+  module:
+    - user
+id: node.actors.default
+targetEntityType: node
+bundle: actors
+mode: default
+content:
+  flag_subscribe_node:
+    weight: 10
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

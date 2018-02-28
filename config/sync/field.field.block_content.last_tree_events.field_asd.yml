@@ -1,0 +1,28 @@
+uuid: 4f21b583-e6cb-4f71-80cd-b8780f83db38
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.last_tree_events
+    - field.storage.block_content.field_asd
+    - node.type.event
+id: block_content.last_tree_events.field_asd
+field_name: field_asd
+entity_type: block_content
+bundle: last_tree_events
+label: asd
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      event: event
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

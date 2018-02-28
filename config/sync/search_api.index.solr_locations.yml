@@ -1,0 +1,84 @@
+uuid: 4b1de91e-4bd5-4dfa-82ec-7176d07a4b11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - search_api.server.solr_locations
+  module:
+    - search_api
+    - node
+id: solr_locations
+name: 'solr locations'
+description: ''
+read_only: false
+field_settings:
+  field_description:
+    label: Description
+    datasource_id: 'entity:node'
+    property_path: field_description
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_description
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - location
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  html_filter:
+    all_fields: true
+    fields:
+      - field_description
+      - title
+    title: true
+    alt: true
+    tags:
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      b: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  ignorecase:
+    all_fields: true
+    fields:
+      - field_description
+      - title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  rendered_item: {  }
+  tokenizer:
+    all_fields: true
+    fields:
+      - field_description
+      - title
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: solr_locations

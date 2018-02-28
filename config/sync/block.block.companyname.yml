@@ -1,0 +1,22 @@
+uuid: 6bd3e2d6-0706-4546-9ee8-88aa0201e5d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.company_name
+  module:
+    - facets
+  theme:
+    - bartik
+id: companyname
+theme: bartik
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'facet_block:company_name'
+settings:
+  id: 'facet_block:company_name'
+  label: Industry
+  provider: facets
+  label_display: visible
+visibility: {  }

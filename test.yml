@@ -1,0 +1,39 @@
+//without ui, migration plus
+//with foreign keys
+id: companies_csv_import
+label: Companies CSV file migration
+source:
+  plugin: csv
+  path: 'companies.csv'
+  header_row_count: 1
+  delimiter: ','
+  enclosure: '"'
+  keys:
+    - id
+  column_names:
+    0:
+      id: 'id'
+    1:
+      title: 'Company name'
+    2:
+      description: 'Description'
+    3:
+      email: 'Email'
+    4:
+      phone: 'company phone'
+    5:
+      website: 'website'
+    6:
+      created: 'created' //save as date 20 3 2017 -  bazo se more shranit timestamp
+
+process:
+  title: title
+  field_c_description: description
+  field_contact: email
+  field_phonenumber: field_user_first_name
+  field_website: field_user_last_name
+  type:
+      plugin: default_value
+      default_value: company
+destination:
+  plugin: entity:node

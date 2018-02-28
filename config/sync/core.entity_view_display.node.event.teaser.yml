@@ -1,0 +1,69 @@
+uuid: 2a57ca1c-b4c4-4c0a-9264-9f52f1f7451c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.field_description
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_event_website
+    - field.field.node.event.field_flagged
+    - field.field.node.event.field_image
+    - field.field.node.event.field_location
+    - field.field.node.event.field_organizer
+    - field.field.node.event.field_start_end_date
+    - field.field.node.event.field_twitter_text
+    - node.type.event
+  module:
+    - datetime_range
+    - image
+    - text
+    - user
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  field_description:
+    type: text_trimmed
+    weight: 2
+    region: content
+    label: above
+    settings:
+      trim_length: 250
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_start_end_date:
+    type: daterange_custom
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'd. M Y H:i:s'
+      separator: '-'
+    third_party_settings: {  }
+  flag_favourites_events:
+    weight: 10
+    region: content
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_event_type: true
+  field_event_website: true
+  field_flagged: true
+  field_location: true
+  field_organizer: true
+  field_twitter_text: true
+  langcode: true

@@ -1,0 +1,21 @@
+uuid: 7eb2a595-4b9e-43f8-8dff-0a5962fbe265
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - views
+    - viewsreference
+id: paragraph.field_view_ref
+field_name: field_view_ref
+entity_type: paragraph
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

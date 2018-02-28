@@ -1,0 +1,16 @@
+uuid: f536ea5a-84aa-4689-b924-6573f1d7af27
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.events_block
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: block_content.events_block
+target_entity_type_id: block_content
+target_bundle: events_block
+default_langcode: site_default
+language_alterable: true

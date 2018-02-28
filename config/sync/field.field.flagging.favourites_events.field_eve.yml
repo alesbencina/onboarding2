@@ -1,0 +1,28 @@
+uuid: e91bba6a-44bf-4dc3-933f-48e88c252a84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.flagging.field_eve
+    - flag.flag.favourites_events
+    - node.type.event
+id: flagging.favourites_events.field_eve
+field_name: field_eve
+entity_type: flagging
+bundle: favourites_events
+label: events
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      event: event
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

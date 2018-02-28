@@ -1,0 +1,22 @@
+uuid: 59924e5e-10f9-4105-884f-f9239d6a2e1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.countries
+  module:
+    - user
+id: node.countries.teaser
+targetEntityType: node
+bundle: countries
+mode: teaser
+content:
+  flag_subscribe_node:
+    weight: 10
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,32 @@
+uuid: 9ce18329-9da6-401c-a561-5e1f8ecc02ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_solr
+id: solr_2
+name: 'SOLR 2'
+description: ''
+backend: search_api_solr
+backend_config:
+  connector: standard
+  connector_config:
+    scheme: http
+    host: drupalvm.test
+    port: '8983'
+    path: /solr
+    core: ales
+    timeout: 5
+    index_timeout: 5
+    optimize_timeout: 10
+    commit_within: 1000
+    solr_version: ''
+    http_method: AUTO
+  retrieve_data: false
+  highlight_data: false
+  excerpt: false
+  skip_schema_check: false
+  site_hash: false
+  suggest_suffix: true
+  suggest_corrections: true
+  suggest_words: false

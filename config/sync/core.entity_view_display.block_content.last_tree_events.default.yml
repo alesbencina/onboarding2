@@ -1,0 +1,32 @@
+uuid: 566192c1-b6bb-4a4f-976f-8a296f50c41a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.last_tree_events
+    - field.field.block_content.last_tree_events.body
+    - field.field.block_content.last_tree_events.field_asd
+  module:
+    - text
+id: block_content.last_tree_events.default
+targetEntityType: block_content
+bundle: last_tree_events
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_asd:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  langcode: true

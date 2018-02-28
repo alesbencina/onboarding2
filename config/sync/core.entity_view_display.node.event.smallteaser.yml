@@ -1,0 +1,91 @@
+uuid: b44a86a6-86fe-495e-9ba5-6c9de73a7ccb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.smallteaser
+    - field.field.node.event.field_description
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_event_website
+    - field.field.node.event.field_flagged
+    - field.field.node.event.field_image
+    - field.field.node.event.field_location
+    - field.field.node.event.field_organizer
+    - field.field.node.event.field_start_end_date
+    - field.field.node.event.field_twitter_text
+    - image.style.medium
+    - node.type.event
+  module:
+    - ds
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked_fluid
+      library: ds/ds_2col_stacked_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_image
+      right:
+        - node_title
+        - field_description
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
+id: node.event.smallteaser
+targetEntityType: node
+bundle: event
+mode: smallteaser
+content:
+  field_description:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: right
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: left
+  flag_favourites_events:
+    weight: 10
+    region: content
+hidden:
+  field_event_type: true
+  field_event_website: true
+  field_flagged: true
+  field_location: true
+  field_organizer: true
+  field_start_end_date: true
+  field_twitter_text: true
+  langcode: true
+  links: true

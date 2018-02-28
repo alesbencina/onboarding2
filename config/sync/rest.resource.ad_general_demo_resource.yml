@@ -1,0 +1,20 @@
+uuid: 9e6a5233-b6f8-44b6-b6d7-fe2cac46804a
+langcode: en
+status: true
+dependencies:
+  module:
+    - ad_general
+    - hal
+    - serialization
+    - user
+id: ad_general_demo_resource
+plugin_id: ad_general_demo_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - hal_json
+    - json
+  authentication:
+    - cookie

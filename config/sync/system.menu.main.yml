@@ -1,0 +1,10 @@
+uuid: 320a7eb4-f951-41a4-8b62-173d82fa63d0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
+id: main
+label: Events
+description: 'Site section links'
+locked: true

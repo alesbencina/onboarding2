@@ -1,0 +1,21 @@
+uuid: 3d7027ea-9996-44d2-aff0-6976d02bc62c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.home_block_info
+    - field.storage.block_content.field_text
+  module:
+    - text
+id: block_content.home_block_info.field_text
+field_name: field_text
+entity_type: block_content
+bundle: home_block_info
+label: text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

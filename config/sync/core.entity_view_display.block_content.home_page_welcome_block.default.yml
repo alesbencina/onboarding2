@@ -1,0 +1,63 @@
+uuid: 558542b0-bd5b-4741-8779-14dad8c9e6c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.home_page_welcome_block
+    - field.field.block_content.home_page_welcome_block.body
+    - field.field.block_content.home_page_welcome_block.field_image
+    - field.field.block_content.home_page_welcome_block.field_welcome_text
+  module:
+    - ds
+    - image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      content:
+        - body
+        - field_welcome_text
+        - field_image
+id: block_content.home_page_welcome_block.default
+targetEntityType: block_content
+bundle: home_page_welcome_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_welcome_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  langcode: true

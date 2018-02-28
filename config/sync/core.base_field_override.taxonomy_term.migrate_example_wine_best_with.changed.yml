@@ -1,0 +1,18 @@
+uuid: 84a4d324-58fc-4ec0-b4ad-431abf5f762b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.migrate_example_wine_best_with
+id: taxonomy_term.migrate_example_wine_best_with.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: migrate_example_wine_best_with
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

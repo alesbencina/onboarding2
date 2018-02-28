@@ -1,0 +1,18 @@
+uuid: 2e14a0f3-658b-4f74-a7de-231c62e185fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slider
+id: node.slider.publish_on
+field_name: publish_on
+entity_type: node
+bundle: slider
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -1,0 +1,23 @@
+uuid: f3cab2b7-3d38-4206-b6e2-707b6ab3df4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yt
+    - node.type.location
+  module:
+    - ad_general
+id: node.location.field_yt
+field_name: field_yt
+entity_type: node
+bundle: location
+label: ytlink
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    uri: {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_youtube_link

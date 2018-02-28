@@ -1,0 +1,64 @@
+uuid: 0fd7f4fb-2159-4d89-81dc-f67738a8048b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.home_block_info
+    - field.field.block_content.home_block_info.field_image
+    - field.field.block_content.home_block_info.field_text
+  module:
+    - ds
+    - image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_image
+      right:
+        - 'bundle_field:block_content'
+        - field_text
+    fields:
+      'bundle_field:block_content':
+        plugin_id: 'bundle_field:block_content'
+        weight: 1
+        label: hidden
+        formatter: default
+id: block_content.home_block_info.default
+targetEntityType: block_content
+bundle: home_block_info
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: left
+  field_text:
+    type: text_default
+    weight: 2
+    region: right
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

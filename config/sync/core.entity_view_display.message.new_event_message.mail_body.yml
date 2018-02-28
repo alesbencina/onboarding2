@@ -1,0 +1,20 @@
+uuid: 896448a8-959a-49ed-8f7b-32e3be9bb5ef
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_body
+    - field.field.message.new_event_message.field_event_reference
+    - message.template.new_event_message
+id: message.new_event_message.mail_body
+targetEntityType: message
+bundle: new_event_message
+mode: mail_body
+content:
+  partial_0:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_event_reference: true

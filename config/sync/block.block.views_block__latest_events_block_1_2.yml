@@ -1,0 +1,30 @@
+uuid: 29ccd872-e27f-4e39-ae9e-e3d8e21f8231
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_events
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__latest_events_block_1_2
+theme: bartik
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:latest_events-block_1'
+settings:
+  id: 'views_block:latest_events-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /landing
+    negate: false
+    context_mapping: {  }

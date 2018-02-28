@@ -1,0 +1,17 @@
+uuid: 8bd2156f-9a56-4b43-a7c9-a32e2a57e596
+langcode: en
+status: true
+dependencies: {  }
+template: new_event_message
+label: new_event_message
+description: 'New event message'
+text:
+  -
+    value: "<p>New event [message:field_event_reference:entity:title]&nbsp; has been created!</p>\r\n"
+    format: basic_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

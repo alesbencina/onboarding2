@@ -1,0 +1,22 @@
+uuid: 4e213e5c-3104-4b28-aebd-f2402186cc0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.migrate_example_advanced_comment
+id: comment.migrate_example_advanced_comment.status
+field_name: status
+entity_type: comment
+bundle: migrate_example_advanced_comment
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: 'Drupal\comment\Entity\Comment::getDefaultStatus'
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

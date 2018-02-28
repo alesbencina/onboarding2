@@ -1,0 +1,44 @@
+uuid: ea002e17-1042-45f2-a4e0-7e88475fb09e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.events
+    - field.field.block_content.events.field_event
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      content:
+        - body
+        - field_event
+id: block_content.events.default
+targetEntityType: block_content
+bundle: events
+mode: default
+content:
+  field_event:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  langcode: true

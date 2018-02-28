@@ -1,0 +1,18 @@
+uuid: d08e2715-3bc0-4dbc-a0a3-4a1bd04412a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_wine
+id: node.migrate_example_wine.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: migrate_example_wine
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

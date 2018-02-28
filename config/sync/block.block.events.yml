@@ -1,0 +1,25 @@
+uuid: 9f38390d-7c78-48b6-847d-02ef0e3c4964
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:events:40c52257-d5e0-4371-9da5-e400d65e04a9'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: events
+theme: bartik
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:40c52257-d5e0-4371-9da5-e400d65e04a9'
+settings:
+  id: 'block_content:40c52257-d5e0-4371-9da5-e400d65e04a9'
+  label: Events
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

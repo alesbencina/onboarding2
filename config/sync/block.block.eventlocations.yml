@@ -1,0 +1,22 @@
+uuid: 2c59525e-96f9-40bc-9b96-002ab47e2899
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.event_locations
+  module:
+    - facets
+  theme:
+    - bartik
+id: eventlocations
+theme: bartik
+region: sidebar_second
+weight: -17
+provider: null
+plugin: 'facet_block:event_locations'
+settings:
+  id: 'facet_block:event_locations'
+  label: 'Event locations'
+  provider: facets
+  label_display: visible
+visibility: {  }

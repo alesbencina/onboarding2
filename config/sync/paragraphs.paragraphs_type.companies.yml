@@ -1,0 +1,9 @@
+uuid: 905c4c87-4921-4f77-a32f-ec6c5780deb6
+langcode: en
+status: true
+dependencies: {  }
+id: companies
+label: view
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

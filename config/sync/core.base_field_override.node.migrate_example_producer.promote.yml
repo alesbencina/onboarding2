@@ -1,0 +1,22 @@
+uuid: a18da6d8-e653-479c-8b67-4bdb22432fee
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_producer
+id: node.migrate_example_producer.promote
+field_name: promote
+entity_type: node
+bundle: migrate_example_producer
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

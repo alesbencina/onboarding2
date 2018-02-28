@@ -1,0 +1,21 @@
+uuid: 1ee3a727-c2eb-4abe-bc1f-b89fb6c6c440
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_rgb
+field_name: field_rgb
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

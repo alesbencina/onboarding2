@@ -1,0 +1,54 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Ponastavi
+      pager:
+        options:
+          tags:
+            previous: '‹ prejšnja'
+            next: 'naslednja ›'
+            first: '« prva'
+            last: 'zadnja »'
+      fields:
+        title:
+          label: Naslov
+        name:
+          label: Avtor
+        status:
+          label: Stanje
+          settings:
+            format_custom_true: Objavljeno
+        operations:
+          label: Operacije
+      filters:
+        status:
+          expose:
+            label: Stanje
+          group_info:
+            group_items:
+              1:
+                title: Objavljeno
+        type:
+          expose:
+            label: Tip
+        title:
+          expose:
+            label: Naslov
+        langcode:
+          expose:
+            label: Jezik
+  overview:
+    display_options:
+      tab_options:
+        title: Vsebine
+  user_page:
+    display_options:
+      tab_options:
+        title: Vsebine
+      arguments:
+        uid:
+          exception:
+            title: Vsi

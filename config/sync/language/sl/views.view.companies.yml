@@ -1,0 +1,12 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Potrdi
+          reset_button_label: Ponstavi
+          exposed_sorts_label: 'Sortiraj po'
+          sort_asc_label: Naraščajoče
+          sort_desc_label: Padajoče
+      title: Podjetja
+label: Podjetja

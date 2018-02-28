@@ -1,0 +1,22 @@
+uuid: 7d480aca-f635-44b3-8d97-d670c3ff651c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.flagging.favourites_events.field_eve
+    - flag.flag.favourites_events
+id: flagging.favourites_events.default
+targetEntityType: flagging
+bundle: favourites_events
+mode: default
+content:
+  field_eve:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

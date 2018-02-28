@@ -1,0 +1,42 @@
+uuid: 33b086d2-e978-4a24-9234-70d9aa128ce7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.flagging.favourites_events.field_eve
+    - flag.flag.favourites_events
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - 'bundle_field:flagging'
+        - field_eve
+    fields:
+      'bundle_field:flagging':
+        plugin_id: 'bundle_field:flagging'
+        weight: 0
+        label: hidden
+        formatter: default
+id: flagging.favourites_events.default
+targetEntityType: flagging
+bundle: favourites_events
+mode: default
+content:
+  field_eve:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

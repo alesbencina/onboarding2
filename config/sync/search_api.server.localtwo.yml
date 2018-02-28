@@ -1,0 +1,17 @@
+uuid: 3925021a-c16c-43e1-83a5-99238891b62a
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: localtwo
+name: localtwo
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 3
+  partial_matches: false
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

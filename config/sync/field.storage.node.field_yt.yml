@@ -1,0 +1,19 @@
+uuid: aaf316c1-cbf1-49ed-aca6-ca2780390ab6
+langcode: en
+status: true
+dependencies:
+  module:
+    - ad_general
+    - node
+id: node.field_yt
+field_name: field_yt
+entity_type: node
+type: field_youtube_link
+settings: {  }
+module: ad_general
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

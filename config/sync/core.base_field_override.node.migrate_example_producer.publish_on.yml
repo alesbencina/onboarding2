@@ -1,0 +1,18 @@
+uuid: 0f9f9a1f-ff58-4696-81e4-d6c080b4e1a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_producer
+id: node.migrate_example_producer.publish_on
+field_name: publish_on
+entity_type: node
+bundle: migrate_example_producer
+label: 'Publish on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

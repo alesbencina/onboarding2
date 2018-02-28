@@ -1,0 +1,20 @@
+uuid: 5eff67c6-a2af-4fc0-af53-39f7703cc303
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_wine
+id: node.migrate_example_wine.menu_link
+field_name: menu_link
+entity_type: node
+bundle: migrate_example_wine
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

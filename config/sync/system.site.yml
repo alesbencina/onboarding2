@@ -1,0 +1,15 @@
+uuid: 7f6dd0f8-c9f5-4755-b08b-2edd9e5b155a
+name: Drupal
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /slider-homepage
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

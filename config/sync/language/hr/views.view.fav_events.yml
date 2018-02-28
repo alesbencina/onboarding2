@@ -1,0 +1,6 @@
+label: 'Top eventi'
+display:
+  page_1:
+    display_options:
+      menu:
+        title: 'Top eventi'

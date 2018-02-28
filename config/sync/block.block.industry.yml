@@ -1,0 +1,30 @@
+uuid: 10489829-6c23-4a94-8072-c53242d066c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.company_name
+  module:
+    - ctools
+    - facets
+  theme:
+    - bartik
+id: industry
+theme: bartik
+region: content
+weight: -7
+provider: null
+plugin: 'facet_block:company_name'
+settings:
+  id: 'facet_block:company_name'
+  label: Industry
+  provider: facets
+  label_display: visible
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      company: company
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

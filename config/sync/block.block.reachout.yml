@@ -1,0 +1,31 @@
+uuid: c71bd04c-12e2-4367-9acf-d27b56eba0ef
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:home_block_info:22057b42-d5de-4e28-865d-9ccf8a3f630b'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: reachout
+theme: bartik
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:22057b42-d5de-4e28-865d-9ccf8a3f630b'
+settings:
+  id: 'block_content:22057b42-d5de-4e28-865d-9ccf8a3f630b'
+  label: 'Reach out'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

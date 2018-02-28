@@ -1,0 +1,18 @@
+uuid: 52202954-b83e-4a22-9ce7-5bb86823862b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.home_page_welcome_block
+id: block_content.home_page_welcome_block.info
+field_name: info
+entity_type: block_content
+bundle: home_page_welcome_block
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

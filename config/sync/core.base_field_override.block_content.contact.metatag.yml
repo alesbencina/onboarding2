@@ -1,0 +1,18 @@
+uuid: e31c13c8-da83-48cf-8bc0-ed9c63cfe9b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact
+id: block_content.contact.metatag
+field_name: metatag
+entity_type: block_content
+bundle: contact
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

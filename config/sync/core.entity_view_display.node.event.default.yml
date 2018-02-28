@@ -1,0 +1,128 @@
+uuid: 29804acb-2815-4be5-b651-f9ee054c35ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.field_description
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_event_website
+    - field.field.node.event.field_flagged
+    - field.field.node.event.field_image
+    - field.field.node.event.field_location
+    - field.field.node.event.field_organizer
+    - field.field.node.event.field_start_end_date
+    - field.field.node.event.field_twitter_text
+    - image.style.medium
+    - node.type.event
+  module:
+    - datetime_range
+    - ds
+    - image
+    - taxonomy
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked_fluid
+      library: ds/ds_2col_stacked_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      header:
+        - field_image
+        - node_title
+        - field_event_type
+        - field_start_end_date
+        - field_twitter_text
+        - field_flagged
+      right:
+        - flag_favourites_events
+      footer:
+        - field_description
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  field_description:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: footer
+  field_event_type:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_reference_rss_category
+    region: header
+  field_flagged:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: header
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: header
+  field_start_end_date:
+    weight: 3
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'd. M Y H:i:s'
+      separator: '-'
+    third_party_settings: {  }
+    type: daterange_custom
+    region: header
+  field_twitter_text:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: header
+  flag_favourites_events:
+    weight: 5
+    region: right
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_event_website: true
+  field_location: true
+  field_organizer: true
+  langcode: true
+  links: true

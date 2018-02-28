@@ -1,0 +1,11 @@
+uuid: 3ea2ef65-8268-4a1c-a1f1-470761ec9aa9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.actor
+id: node.actor
+target_entity_type_id: node
+target_bundle: actor
+default_langcode: site_default
+language_alterable: false

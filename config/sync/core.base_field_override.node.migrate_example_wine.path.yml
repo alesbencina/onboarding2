@@ -1,0 +1,20 @@
+uuid: 323fbb50-bb12-4c97-841a-c740e1b8e429
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_wine
+  module:
+    - path
+id: node.migrate_example_wine.path
+field_name: path
+entity_type: node
+bundle: migrate_example_wine
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

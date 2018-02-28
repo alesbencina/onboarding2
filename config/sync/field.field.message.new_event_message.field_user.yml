@@ -1,0 +1,28 @@
+uuid: ac113b1f-90df-4cd1-9759-ede754afde0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_user
+    - message.template.new_event_message
+id: message.new_event_message.field_user
+field_name: field_user
+entity_type: message
+bundle: new_event_message
+label: user
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: true
+field_type: entity_reference

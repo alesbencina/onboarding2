@@ -1,0 +1,10 @@
+uuid: c05684c6-fa87-4528-a074-0315c79e2ccf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _iidyBpZhk61ekfCNeZlPQe6CTRTRGvu6s0XtxltmQ8
+id: node_comments
+label: 'Node comments'
+target_entity_type_id: node
+description: ''

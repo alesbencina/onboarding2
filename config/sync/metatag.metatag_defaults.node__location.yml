@@ -1,0 +1,9 @@
+uuid: 6381e8b3-9266-4a69-bf69-8357b6df7533
+langcode: en
+status: true
+dependencies: {  }
+id: node__location
+label: 'Content: Location'
+tags:
+  image_src: '[node:field_image]'
+  title: '[site:name] | [node:title]'

@@ -1,0 +1,18 @@
+uuid: 80ad72bf-507a-4f48-96b9-9aaf06ed4ec5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.migrate_example_wine_regions
+id: taxonomy_term.migrate_example_wine_regions.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: migrate_example_wine_regions
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,18 @@
+uuid: 5a8e57ff-136f-425a-b231-4a64fe34da6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.last_tree_events
+id: block_content.last_tree_events.metatag
+field_name: metatag
+entity_type: block_content
+bundle: last_tree_events
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,6 @@
+label: 'Solr Išči lokacije'
+display:
+  page_1:
+    display_options:
+      menu:
+        title: 'Solr Išči lokacije'

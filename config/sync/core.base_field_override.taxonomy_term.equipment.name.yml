@@ -1,0 +1,18 @@
+uuid: c3821d3f-e5bc-4ea9-a96d-7f6ccad0110b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.equipment
+id: taxonomy_term.equipment.name
+field_name: name
+entity_type: taxonomy_term
+bundle: equipment
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

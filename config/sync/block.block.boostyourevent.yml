@@ -1,0 +1,31 @@
+uuid: 705c6a4c-a605-44fa-8042-56679f9ff6e1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:home_block_info:cf3cd971-fb15-4847-a999-80f545ce6a1c'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: boostyourevent
+theme: bartik
+region: content
+weight: -13
+provider: null
+plugin: 'block_content:cf3cd971-fb15-4847-a999-80f545ce6a1c'
+settings:
+  id: 'block_content:cf3cd971-fb15-4847-a999-80f545ce6a1c'
+  label: 'Boost your event'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

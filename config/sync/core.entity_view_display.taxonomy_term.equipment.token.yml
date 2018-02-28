@@ -1,0 +1,17 @@
+uuid: ac5e839a-8e6f-4b83-9425-8372f30397e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.token
+    - field.field.taxonomy_term.equipment.field_weight
+    - taxonomy.vocabulary.equipment
+id: taxonomy_term.equipment.token
+targetEntityType: taxonomy_term
+bundle: equipment
+mode: token
+content: {  }
+hidden:
+  description: true
+  field_weight: true
+  langcode: true

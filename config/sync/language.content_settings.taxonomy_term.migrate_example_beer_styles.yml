@@ -1,0 +1,16 @@
+uuid: d20a01b1-790e-43d4-853c-89e4bdc45852
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.migrate_example_beer_styles
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: taxonomy_term.migrate_example_beer_styles
+target_entity_type_id: taxonomy_term
+target_bundle: migrate_example_beer_styles
+default_langcode: site_default
+language_alterable: false

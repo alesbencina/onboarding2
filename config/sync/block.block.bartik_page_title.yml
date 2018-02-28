@@ -1,0 +1,29 @@
+uuid: be4b9b59-a11e-4b45-93a4-872754cf2a31
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - bartik
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: bartik_page_title
+theme: bartik
+region: content
+weight: -19
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Companies
+  provider: core
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      company: company
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

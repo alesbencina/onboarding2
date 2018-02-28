@@ -1,0 +1,20 @@
+uuid: 2d81fbd8-55b1-48f5-9dfe-06dc0b26867b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_producer
+id: node.migrate_example_producer.uid
+field_name: uid
+entity_type: node
+bundle: migrate_example_producer
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

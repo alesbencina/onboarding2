@@ -1,0 +1,59 @@
+uuid: 90c4eb07-2cd5-45e6-8ca4-9902fcde43f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.home_page_welcome_block
+    - field.field.block_content.home_page_welcome_block.body
+    - field.field.block_content.home_page_welcome_block.field_image
+    - field.field.block_content.home_page_welcome_block.field_welcome_text
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+id: block_content.home_page_welcome_block.default
+targetEntityType: block_content
+bundle: home_page_welcome_block
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 28
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_welcome_text:
+    weight: 27
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

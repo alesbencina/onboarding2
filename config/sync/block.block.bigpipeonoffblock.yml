@@ -1,0 +1,22 @@
+uuid: 6234d732-0eb2-4229-8b85-d82232baa3a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - big_pipe_demo
+  theme:
+    - bartik
+_core:
+  default_config_hash: 51I6H522UXEpYrZvds3l6bR_5btFwC1g5yHBrpqegxY
+id: bigpipeonoffblock
+theme: bartik
+region: header
+weight: -8
+provider: null
+plugin: big_pipe_onoff_block
+settings:
+  id: big_pipe_onoff_block
+  label: 'BigPipe on/off block'
+  provider: big_pipe_demo
+  label_display: visible
+visibility: {  }

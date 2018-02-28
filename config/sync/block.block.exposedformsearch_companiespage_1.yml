@@ -1,0 +1,29 @@
+uuid: 08c88bf4-f9d4-4503-b457-a90f07b31e47
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_companies
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: exposedformsearch_companiespage_1
+theme: bartik
+region: sidebar_second
+weight: -14
+provider: null
+plugin: 'views_exposed_filter_block:search_companies-page_1'
+settings:
+  id: 'views_exposed_filter_block:search_companies-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Search
+visibility:
+  request_path:
+    id: request_path
+    pages: /companies-searchapi
+    negate: false
+    context_mapping: {  }

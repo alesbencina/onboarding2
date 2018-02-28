@@ -1,0 +1,18 @@
+uuid: 1543781b-4212-40aa-b632-2d46c143bb75
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: article
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

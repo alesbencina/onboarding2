@@ -1,0 +1,32 @@
+uuid: 50830fce-6839-472d-a54c-bbbae0cdc13e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.new_event_message.field_event_reference
+    - field.field.message.new_event_message.field_user
+    - message.template.new_event_message
+id: message.new_event_message.default
+targetEntityType: message
+bundle: new_event_message
+mode: default
+content:
+  field_event_reference:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_user:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

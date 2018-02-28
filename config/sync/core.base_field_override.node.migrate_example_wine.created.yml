@@ -1,0 +1,18 @@
+uuid: 7c12fe02-b5c0-4cea-9df2-dc08d152d05a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_wine
+id: node.migrate_example_wine.created
+field_name: created
+entity_type: node
+bundle: migrate_example_wine
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

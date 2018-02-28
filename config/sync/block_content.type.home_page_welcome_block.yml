@@ -1,0 +1,8 @@
+uuid: d864c70c-5caa-4a30-a540-70aa06393ef8
+langcode: en
+status: true
+dependencies: {  }
+id: home_page_welcome_block
+label: 'home page welcome block'
+revision: 0
+description: ''

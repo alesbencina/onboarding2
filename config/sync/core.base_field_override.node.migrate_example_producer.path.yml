@@ -1,0 +1,20 @@
+uuid: 9ea26016-defa-45be-8ede-c37c6661e5ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_producer
+  module:
+    - path
+id: node.migrate_example_producer.path
+field_name: path
+entity_type: node
+bundle: migrate_example_producer
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

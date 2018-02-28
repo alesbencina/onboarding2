@@ -1,0 +1,29 @@
+uuid: d1e533da-bace-48ac-bbea-0212c51a1259
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_companies_solr
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: exposedformsearch_companies_solrpage_1
+theme: bartik
+region: sidebar_second
+weight: -11
+provider: null
+plugin: 'views_exposed_filter_block:search_companies_solr-page_1'
+settings:
+  id: 'views_exposed_filter_block:search_companies_solr-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /search-companies-solr
+    negate: false
+    context_mapping: {  }

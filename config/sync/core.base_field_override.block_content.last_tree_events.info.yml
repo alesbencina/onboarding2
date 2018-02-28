@@ -1,0 +1,18 @@
+uuid: 70cbfc0e-6d80-461f-9d9d-27db05065246
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.last_tree_events
+id: block_content.last_tree_events.info
+field_name: info
+entity_type: block_content
+bundle: last_tree_events
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

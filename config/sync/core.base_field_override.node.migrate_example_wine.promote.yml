@@ -1,0 +1,22 @@
+uuid: fb1a79b3-7621-4286-8dc8-742d2628d9c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_wine
+id: node.migrate_example_wine.promote
+field_name: promote
+entity_type: node
+bundle: migrate_example_wine
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

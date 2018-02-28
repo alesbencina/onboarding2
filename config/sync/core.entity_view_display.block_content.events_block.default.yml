@@ -1,0 +1,42 @@
+uuid: dd24a971-421a-458e-bc95-35a26cc33227
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.events_block
+    - field.field.block_content.events_block.body
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      content:
+        - body
+id: block_content.events_block.default
+targetEntityType: block_content
+bundle: events_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

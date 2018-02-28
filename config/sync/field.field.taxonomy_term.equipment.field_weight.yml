@@ -1,0 +1,25 @@
+uuid: 55881004-d64d-4a48-8c86-1a4484cce0f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_weight
+    - taxonomy.vocabulary.equipment
+id: taxonomy_term.equipment.field_weight
+field_name: field_weight
+entity_type: taxonomy_term
+bundle: equipment
+label: weight
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: !!float 0
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 1
+  prefix: ''
+  suffix: ''
+field_type: decimal

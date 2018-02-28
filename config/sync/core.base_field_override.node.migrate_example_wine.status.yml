@@ -1,0 +1,22 @@
+uuid: cf35565b-9d59-41e1-adcb-600b0c7f869d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_wine
+id: node.migrate_example_wine.status
+field_name: status
+entity_type: node
+bundle: migrate_example_wine
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,110 @@
+uuid: d36ab1f5-ada9-41d3-8d0d-f03fd347e6f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.location.field_address
+    - field.field.node.location.field_contact
+    - field.field.node.location.field_description
+    - field.field.node.location.field_equipment
+    - field.field.node.location.field_event_website
+    - field.field.node.location.field_image
+    - field.field.node.location.field_phone
+    - field.field.node.location.field_rgb
+    - field.field.node.location.field_youtugbe_
+    - image.style.thumbnail
+    - node.type.location
+  module:
+    - address
+    - ds
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked
+      library: ds/ds_2col_stacked
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      header:
+        - field_image
+        - node_title
+        - field_address
+        - flag_subscribe_node
+        - field_yt
+      footer:
+        - field_description
+        - node_link
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 6
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
+id: node.location.teaser
+targetEntityType: node
+bundle: location
+mode: teaser
+content:
+  field_address:
+    type: address_default
+    weight: 2
+    region: header
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_description:
+    type: text_trimmed
+    weight: 5
+    region: footer
+    label: hidden
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 0
+    region: header
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+  flag_subscribe_node:
+    weight: 3
+    region: header
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_contact: true
+  field_equipment: true
+  field_event_website: true
+  field_phone: true
+  field_rgb: true
+  field_youtugbe_: true
+  langcode: true
+  links: true

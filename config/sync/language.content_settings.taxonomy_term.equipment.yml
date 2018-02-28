@@ -1,0 +1,16 @@
+uuid: b6e25a33-ce48-4816-a3d0-fc13bf554a62
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.equipment
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.equipment
+target_entity_type_id: taxonomy_term
+target_bundle: equipment
+default_langcode: site_default
+language_alterable: true

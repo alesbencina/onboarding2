@@ -1,0 +1,16 @@
+uuid: 8d4d9cf1-165a-4a5a-bbee-af932619eb4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: block_content.contact
+target_entity_type_id: block_content
+target_bundle: contact
+default_langcode: site_default
+language_alterable: true

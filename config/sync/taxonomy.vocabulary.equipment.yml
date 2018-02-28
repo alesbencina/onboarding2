@@ -1,0 +1,9 @@
+uuid: 68064150-1cbd-4563-8528-e75fb5e6f138
+langcode: en
+status: true
+dependencies: {  }
+name: location_equipment
+vid: equipment
+description: 'Types of equipment'
+hierarchy: 0
+weight: 0

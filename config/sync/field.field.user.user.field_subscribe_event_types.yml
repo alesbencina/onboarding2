@@ -1,0 +1,30 @@
+uuid: eb62ac2d-4db4-4ca0-bca2-6625d9416e00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_subscribe_event_types
+    - taxonomy.vocabulary.event_types
+  module:
+    - user
+id: user.user.field_subscribe_event_types
+field_name: field_subscribe_event_types
+entity_type: user
+bundle: user
+label: subscribe_event_types
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_types: event_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 61ed822f-6cab-4c7c-bc33-a4ab8495d2f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Location
+type: location
+description: 'The content type is used to store information about location.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

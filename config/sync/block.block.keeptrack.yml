@@ -1,0 +1,31 @@
+uuid: f464c34c-9bf4-4536-a7ef-25f82c9281d8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:home_block_info:3b32f86c-2480-4fc4-aa47-db4c7a46a591'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: keeptrack
+theme: bartik
+region: content
+weight: -12
+provider: null
+plugin: 'block_content:3b32f86c-2480-4fc4-aa47-db4c7a46a591'
+settings:
+  id: 'block_content:3b32f86c-2480-4fc4-aa47-db4c7a46a591'
+  label: 'Keep track'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n"
+    negate: false
+    context_mapping: {  }

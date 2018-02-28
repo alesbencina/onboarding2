@@ -1,0 +1,30 @@
+uuid: 633cbb18-c799-4f09-aeee-dd72af2ef5e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.event_locations
+  module:
+    - ctools
+    - facets
+  theme:
+    - bartik
+id: eventlocations_2
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'facet_block:event_locations'
+settings:
+  id: 'facet_block:event_locations'
+  label: 'Event locations'
+  provider: facets
+  label_display: visible
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
